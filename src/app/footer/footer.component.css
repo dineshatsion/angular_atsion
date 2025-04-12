@@ -1,0 +1,22 @@
+.footer {
+    background-color:#0e1b2c; padding: 50px 20px; text-align: left;border-radius: 5px;
+    }
+.footer-container { 
+   display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; flex-wrap: wrap; margin: auto; max-width: 1200px; } 
+.footer-section { flex: 1; min-width: 250px; margin: 10px; } 
+p {color: white;}
+p a { text-decoration: none; color: white; } 
+.logo { width: 150px; } h3 { font-size: 18px; margin-bottom: 15px; font-weight: 600; } 
+ul { list-style: none; padding: 0; }
+ul li { margin-bottom: 8px; }
+ ul li a { color: #ddd; text-decoration: none; font-size: 14px; transition: 0.3s; } 
+ ul li a:hover { color: #00d1ff; text-decoration: none; } 
+ .social-icons { margin-top: 25px; } 
+ .social-icons a { display: inline-block; font-size: 25px; margin-right: 12px; color: #00d1ff; transition: 0.3s; } 
+ .payment-methods { display: flex; gap: 25px; margin-top: 10px; } 
+ .payment-methods i { font-size: 45px; transition: 0.3s; }
+  .footer-bottom { text-align: center; margin-top: 40px; padding-top: 25px; border-top: 2px solid #2c3e50; width: 85%; margin-left: 125px; }
+   .footer-bottom a { color: #00d1ff; text-decoration: none; margin: 0 12px; font-size: 14px; }
+    .footer-bottom a:hover { text-decoration: none }
