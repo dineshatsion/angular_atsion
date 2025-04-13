@@ -1,0 +1,54 @@
+<!-- Chat Button -->
+<button class="chat-button" (click)="openForm()">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  Chat with Us
+</button>
+
+<!-- Chat Form -->
+<div class="form-container" *ngIf="chatVisible">
+  <span class="close-btn" (click)="closeForm()">✖</span>
+  <h2 style="color: #25D366; text-align: center;">WhatsApp Us</h2>
+  <p style="color: black;">We'd Love to Hear From You</p>
+
+  <form (ngSubmit)="submitForm()">
+    <div class="form-group">
+      <label for="name">Name <span>*</span></label>
+      <input type="text" id="name" [(ngModel)]="formData.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Your WhatsApp Number <span>*</span></label>
+      <input type="tel" id="phone" [(ngModel)]="formData.phone" name="phone">
+    </div>
+
+    <div class="form-group">
+      <label for="qualification">Highest Qualification <span>*</span></label>
+      <select id="qualification" [(ngModel)]="formData.qualification" name="qualification">
+        <option value="">-- Select --</option>
+        <option value="Graduate">Graduate</option>
+        <option value="Post-graduate">Post-graduate</option>
+        <option value="Degree">Degree</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="state">Native State <span>*</span></label>
+      <select id="state" [(ngModel)]="formData.state" name="state">
+        <option value="">-- Select --</option>
+        <option *ngFor="let state of states" [value]="state">{{ state }}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="query">Query <span>*</span></label>
+      <textarea id="query" [(ngModel)]="formData.query" name="query"></textarea>
+    </div>
+
+    <p class="terms">
+      <input type="checkbox" [(ngModel)]="formData.termsAccepted" name="termsAccepted">
+      By proceeding further, I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>
+    </p>
+
+    <button type="button" (click)="submitForm()">WhatsApp Us</button>
+  </form>
+</div>

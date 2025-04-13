@@ -1,0 +1,52 @@
+<section class="building-future-section">
+    <div class="container">
+      <h2 class="section-title">Building the Future</h2>
+      <p class="section-subtitle">Innovative solutions for tomorrow's challenges</p>
+      
+      <div class="cards-container">
+        <!-- Card 1 -->
+        <div class="future-card" [ngClass]="{'hover-effect': hoverStates[0]}" 
+             (mouseenter)="hoverStates[0] = true" (mouseleave)="hoverStates[0] = false">
+          <div class="card-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3 class="card-title">AI Innovation</h3>
+          <p class="card-text">Cutting-edge artificial intelligence solutions transforming industries.</p>
+          <a href="#" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="future-card" [ngClass]="{'hover-effect': hoverStates[1]}" 
+             (mouseenter)="hoverStates[1] = true" (mouseleave)="hoverStates[1] = false">
+          <div class="card-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3 class="card-title">Global Connectivity</h3>
+          <p class="card-text">Seamless worldwide networks bringing people and businesses together.</p>
+          <a href="#" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="future-card" [ngClass]="{'hover-effect': hoverStates[2]}" 
+             (mouseenter)="hoverStates[2] = true" (mouseleave)="hoverStates[2] = false">
+          <div class="card-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3 class="card-title">Sustainable Tech</h3>
+          <p class="card-text">Eco-friendly technologies for a greener tomorrow.</p>
+          <a href="#" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <!-- Card 4 -->
+        <div class="future-card" [ngClass]="{'hover-effect': hoverStates[3]}" 
+             (mouseenter)="hoverStates[3] = true" (mouseleave)="hoverStates[3] = false">
+          <div class="card-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 class="card-title">Cybersecurity</h3>
+          <p class="card-text">Advanced protection for digital assets and privacy.</p>
+          <a href="#" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
