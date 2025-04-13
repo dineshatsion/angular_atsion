@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavbarComponent } from './navbar.component';
+import { VideoCarouselComponent } from './video-carousel.component';
 
-describe('NavbarComponent', () => {
-  let component: NavbarComponent;
-  let fixture: ComponentFixture<NavbarComponent>;
+describe('VideoCarouselComponent', () => {
+  let component: VideoCarouselComponent;
+  let fixture: ComponentFixture<VideoCarouselComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavbarComponent]
+      imports: [VideoCarouselComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(NavbarComponent);
+    fixture = TestBed.createComponent(VideoCarouselComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

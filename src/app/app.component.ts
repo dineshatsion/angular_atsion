@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './navbar/navbar.component';
-import { Navbar1Component } from './navbar1/navbar1.component';
+import { CollaboratorsComponent } from './collaborators/collaborators.component';
+import { CookiepolicyComponent } from './cookiepolicy/cookiepolicy.component';
+import { MapComponent } from './map/map.component';
+import { TermsComponent } from './terms/terms.component';
+import { TextComponent } from './text/text.component';
+import { VideoCarouselComponent } from './video-carousel/video-carousel.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent, Navbar1Component],
+  imports: [RouterOutlet, CollaboratorsComponent, CookiepolicyComponent, MapComponent, TermsComponent, TextComponent, VideoCarouselComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
