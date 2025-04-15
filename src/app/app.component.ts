@@ -12,7 +12,7 @@ import { VideoComponent } from './video/video.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent, Navbar1Component,ChatwithusComponent, CollaboratorsComponent, MapComponent, TextComponent, VideoComponent],
+  imports: [RouterOutlet, NavbarComponent, Navbar1Component,ChatwithusComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
