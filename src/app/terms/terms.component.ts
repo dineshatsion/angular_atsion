@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-terms',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   templateUrl: './terms.component.html',
   styleUrl: './terms.component.css'
 })
-export class TermsComponent {
-
+export class TermsComponent implements OnInit {
+  ngOnInit(): void {
+    window.scrollTo(0, 0); // Scrolls to the top of the page
+  }
 }
